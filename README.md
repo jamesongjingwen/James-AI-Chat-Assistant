@@ -1,6 +1,9 @@
 # James-AI-Chat-Assistant
 An innovative Generative AI Chatbot project, incorporating Flask, OpenAI's embeddings, and RAG for enriched, intuitive, and dynamic conversational experiences.
 
+![Example Image](Chatbot Image.png)
+
+
 Project Overview
 
 Title: James' AI Chat Assistant
