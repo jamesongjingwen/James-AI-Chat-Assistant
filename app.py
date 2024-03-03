@@ -22,7 +22,7 @@ def read_docx(file_path):
     full_text_string = '\n'.join(full_text)
     return full_text_string
 
-file_path = r'C:\Users\theja\OneDrive\Desktop\MSBA\MSBA Course\Semester 2\SAP Test\VS\Summary.docx'
+file_path = r'C:\Users\theja\OneDrive\Desktop\MSBA\MSBA Course\Semester 2\SAP Test\VS\Summary.docx' #Enter your Summary.docx dataset directory here
 data = read_docx(file_path)
 
 class SimpleCharacterTextSplitter:
@@ -35,8 +35,7 @@ class SimpleCharacterTextSplitter:
         start = 0
         while start < len(document):
             end = start + self.chunk_size
-            if end < len(document):  # If not the end of the document
-                # Move 'end' back to the nearest space to avoid splitting words
+            if end < len(document):  
                 while end > start and document[end] not in [' ', '\n', '.', ',']:
                     end -= 1
             chunks.append(document[start:end])
